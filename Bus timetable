@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>stand departure</title>
+        <style>
+          *{
+              padding: 0px;
+              margin:0px;
+          }
+
+          
+            
+       .luar {
+           position: relative;
+           width: 1336px;
+           height: 864px;
+           background-color:aqua;
+           margin:10px auto;
+       } 
+       .kolom1{ 
+           position: relative;
+           width: 50%;
+           height: 40%;
+           background-color:blue; }
+
+           .kolom2{ 
+           position: relative;
+           width: 50%;
+           height: 60%;
+           background-color:chartreuse; }
+           
+           .kolom3{ 
+           position: relative;
+           width: 50%;
+           height: 30%;
+           background-color:chocolate; 
+        float: right;
+        margin-top: -64.6%;}
+
+        .kolom4{
+            position:relative;
+            width: 50%;
+            height: 15%;
+            float: right;
+            background-color: crimson;
+            margin-top:-45.2%;
+        }
+        
+        .kolom5{
+            position:relative;
+            width: 50%;
+            height: 55%;
+            background-color: darkgreen;
+            float: right;
+            margin-top: -35.5%;
+            }
+            
+            .kotak1{
+                position:relative;
+                width: 100%;
+                height:20%;
+                background-color: grey;
+            }
+            .kotak2{
+                position:relative;
+                width: 100%;
+                height:20%;
+                background-color: grey;
+                margin-top: 3%;
+                margin-left: 10%;
+            }
+            .kotak3{
+                position:relative;
+                width: 100%;
+                height:57%;
+                background-color:ivory;
+                margin-left: 10%;
+            }
+            .kotak4{
+                position:relative;
+                width: 50%;
+                height: 26.5%;
+                background-color:black;
+                margin-left: 10%;
+                float: right;
+            }
+            .kotak5{
+                position:relative;
+                width: 50%;
+                height: 66%;
+                background-color:black;
+                margin-top: 2.9%;
+                margin-left: 10%;
+                float: right;
+            }
+            .kotak6{
+                position:relative;
+                width: 55%;
+                height: 90%;
+                background-color:cadetblue;
+                margin-top: 1%;
+                margin-left: 10%;
+                float: right;
+            }
+            .judul2{
+                position:relative;
+                width: 20%;
+                height: 10%;
+                background-color:coral;
+                margin-top: 3%;
+                margin-left: 1%;
+                
+            }
+            .kotak7{
+                position:relative;
+                width: 10%;
+                height: 10%;
+                background-color:coral;
+                margin-left: 1%;
+                margin-top: 4%;
+            }
+            .kotak8{
+                position: relative;
+                background-color: coral;
+                width: 60%;
+                height: 10%;
+                margin-left: 23%;
+                margin-top: -51.5%;
+            }
+            .kotak9{
+                position: relative;
+                background-color: coral;
+                width: 60%;
+                height: 10%;
+                margin-left: 23%;
+                margin-top: 4%;
+            }
+            .kotak10{
+                position: relative;
+                background-color: coral;
+                width: 5%;
+                height: 5%;
+                margin-left: 94%;
+                margin-top: -50%;
+            }
+
+            .kotak11{
+                position: relative;
+                background-color: coral;
+                width: 5%;
+                height: 5%;
+                margin-left: 94%;
+                margin-top: 7.5%;
+            }
+            .judul{
+                position:relative;
+                width: 60%;
+                height: 15%;
+                background-color:darkgray;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hijau{
+                position:relative;
+                width: 50%;
+                height: 3%;
+                background-color:green;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hijau2{
+                position:relative;
+                width: 50%;
+                height: 3%;
+                background-color:green;
+                margin-top:5%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hijau3{
+                position:relative;
+                width: 50%;
+                height: 3%;
+                background-color:green;
+                margin-top:3%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hijau4{
+                position:relative;
+                width: 50%;
+                height: 3%;
+                background-color:green;
+                margin-top:4%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hijau5{
+                position:relative;
+                width: 50%;
+                height: 3%;
+                background-color:green;
+                margin-top:5%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hitam{
+                position:relative;
+                width: 70%;
+                height: 3%;
+                background-color:black;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hitam2{
+                position:relative;
+                width: 70%;
+                height: 3%;
+                background-color:black;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hitam3{
+                position:relative;
+                width: 70%;
+                height: 3%;
+                background-color:black;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hitam4{
+                position:relative;
+                width: 70%;
+                height: 3%;
+                background-color:black;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hitam5{
+                position:relative;
+                width: 70%;
+                height: 3%;
+                background-color:black;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hitam6{
+                position:relative;
+                width: 70%;
+                height: 3%;
+                background-color:black;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hitam7{
+                position:relative;
+                width: 70%;
+                height: 3%;
+                background-color:black;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hitam8{
+                position:relative;
+                width: 70%;
+                height: 3%;
+                background-color:black;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+            .hitam9{
+                position:relative;
+                width: 70%;
+                height: 3%;
+                background-color:black;
+                margin-top:1%;
+                margin-left: 10%;
+                float: left;
+            }
+</style>
+</style>
+</head>
+<body>
+
+        <div class="luar">
+           <div class="kolom1">
+            <div class="kotak1"></div>   
+            <div class="kotak2"></div>   
+            <div class="kotak3"></div>
+        </div>
+    
+        <div class="kolom2">
+          <div class="judul"></div>  
+          <div class="hijau"></div>   
+          <div class="hitam"></div>
+          <div class="hitam2"></div>
+        
+          <div class="hijau2"></div>
+          <div class="hitam3"></div>
+         
+          <div class="hijau3"></div>
+          <div class="hitam4"></div>
+          <div class="hitam5"></div>
+          <div class="hitam6"></div>
+          <div class="hitam7"></div>
+         
+          <div class="hijau4"></div>
+          <div class="hitam8"></div>
+          
+          <div class="hijau5"></div>
+          <div class="hitam9"></div>  
+      </div>
+     
+        <div class="kolom3">  
+          <div class="kotak4"></div>
+          <div class="kotak5"></div>   
+      </div>
+    
+        <div class="kolom4">  
+          <div class="kotak6"></div>
+        </div> 
+    
+        <div class="kolom5">
+          <div class="judul2"></div>   
+          <div class="kotak7"></div>   
+          <div class="kotak7"></div>
+          <div class="kotak7"></div>
+          <div class="kotak7"></div>
+          <div class="kotak7"></div>
+          <div class="kotak8"></div>
+          <div class="kotak9"></div>   
+          <div class="kotak9"></div>
+          <div class="kotak9"></div>
+          <div class="kotak9"></div>
+          <div class="kotak10"></div>
+          <div class="kotak11"></div>
+          <div class="kotak11"></div>
+          <div class="kotak11"></div>
+          <div class="kotak11"></div>
+      </div>
+    </div>  
+    
+      </body>
+    </html>
