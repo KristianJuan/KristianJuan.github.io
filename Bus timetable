@@ -1,354 +1,322 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>stand departure</title>
-        <style>
-          *{
-              padding: 0px;
-              margin:0px;
-          }
+ <head>
+    
+    <title>Bus timetable</title>
 
-          
-            
-       .luar {
-           position: relative;
-           width: 1336px;
-           height: 864px;
-           background-color:aqua;
-           margin:10px auto;
-       } 
-       .kolom1{ 
-           position: relative;
-           width: 50%;
-           height: 40%;
-           background-color:blue; }
 
-           .kolom2{ 
-           position: relative;
-           width: 50%;
-           height: 60%;
-           background-color:chartreuse; }
-           
-           .kolom3{ 
-           position: relative;
-           width: 50%;
-           height: 30%;
-           background-color:chocolate; 
-        float: right;
-        margin-top: -64.6%;}
-
-        .kolom4{
-            position:relative;
-            width: 50%;
-            height: 15%;
-            float: right;
-            background-color: crimson;
-            margin-top:-45.2%;
-        }
-        
-        .kolom5{
-            position:relative;
-            width: 50%;
-            height: 55%;
-            background-color: darkgreen;
-            float: right;
-            margin-top: -35.5%;
-            }
-            
-            .kotak1{
-                position:relative;
-                width: 100%;
-                height:20%;
-                background-color: grey;
-            }
-            .kotak2{
-                position:relative;
-                width: 100%;
-                height:20%;
-                background-color: grey;
-                margin-top: 3%;
-                margin-left: 10%;
-            }
-            .kotak3{
-                position:relative;
-                width: 100%;
-                height:57%;
-                background-color:ivory;
-                margin-left: 10%;
-            }
-            .kotak4{
-                position:relative;
-                width: 50%;
-                height: 26.5%;
-                background-color:black;
-                margin-left: 10%;
-                float: right;
-            }
-            .kotak5{
-                position:relative;
-                width: 50%;
-                height: 66%;
-                background-color:black;
-                margin-top: 2.9%;
-                margin-left: 10%;
-                float: right;
-            }
-            .kotak6{
-                position:relative;
-                width: 55%;
-                height: 90%;
-                background-color:cadetblue;
-                margin-top: 1%;
-                margin-left: 10%;
-                float: right;
-            }
-            .judul2{
-                position:relative;
-                width: 20%;
-                height: 10%;
-                background-color:coral;
-                margin-top: 3%;
-                margin-left: 1%;
+            <style>
+                *{
+                    padding: 0px;
+                    margin: 0px;
+                }
+                /**/
+                .kotakluar {
+                    position: relative;
+                    width: 1000px;
+                    height: 600px;
+                    background-color: white;
+                    margin: auto;
+                    margin-top: 20px;
+                    border-style: solid;
+                    border-width: 2px;
+                    
+                }
                 
-            }
-            .kotak7{
-                position:relative;
-                width: 10%;
-                height: 10%;
-                background-color:coral;
-                margin-left: 1%;
-                margin-top: 4%;
-            }
-            .kotak8{
-                position: relative;
-                background-color: coral;
-                width: 60%;
-                height: 10%;
-                margin-left: 23%;
-                margin-top: -51.5%;
-            }
-            .kotak9{
-                position: relative;
-                background-color: coral;
-                width: 60%;
-                height: 10%;
-                margin-left: 23%;
-                margin-top: 4%;
-            }
-            .kotak10{
-                position: relative;
-                background-color: coral;
-                width: 5%;
-                height: 5%;
-                margin-left: 94%;
-                margin-top: -50%;
-            }
 
-            .kotak11{
-                position: relative;
-                background-color: coral;
-                width: 5%;
-                height: 5%;
-                margin-left: 94%;
-                margin-top: 7.5%;
-            }
-            .judul{
-                position:relative;
-                width: 60%;
-                height: 15%;
-                background-color:darkgray;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hijau{
-                position:relative;
-                width: 50%;
-                height: 3%;
-                background-color:green;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hijau2{
-                position:relative;
-                width: 50%;
-                height: 3%;
-                background-color:green;
-                margin-top:5%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hijau3{
-                position:relative;
-                width: 50%;
-                height: 3%;
-                background-color:green;
-                margin-top:3%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hijau4{
-                position:relative;
-                width: 50%;
-                height: 3%;
-                background-color:green;
-                margin-top:4%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hijau5{
-                position:relative;
-                width: 50%;
-                height: 3%;
-                background-color:green;
-                margin-top:5%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hitam{
-                position:relative;
-                width: 70%;
-                height: 3%;
-                background-color:black;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hitam2{
-                position:relative;
-                width: 70%;
-                height: 3%;
-                background-color:black;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hitam3{
-                position:relative;
-                width: 70%;
-                height: 3%;
-                background-color:black;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hitam4{
-                position:relative;
-                width: 70%;
-                height: 3%;
-                background-color:black;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hitam5{
-                position:relative;
-                width: 70%;
-                height: 3%;
-                background-color:black;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hitam6{
-                position:relative;
-                width: 70%;
-                height: 3%;
-                background-color:black;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hitam7{
-                position:relative;
-                width: 70%;
-                height: 3%;
-                background-color:black;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hitam8{
-                position:relative;
-                width: 70%;
-                height: 3%;
-                background-color:black;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-            .hitam9{
-                position:relative;
-                width: 70%;
-                height: 3%;
-                background-color:black;
-                margin-top:1%;
-                margin-left: 10%;
-                float: left;
-            }
-</style>
-</style>
-</head>
-<body>
+                .background {
+                    position: relative;
+                    width: 100%;
+                    height: 10%;
+                    background-color: grey;
+                    margin-top: 0px;
+                }
+                
+                
+                .main1 {
+                    position: relative;
+                    width: 45%;
+                    height: 85%;
+                    background-color: white;
+            
+                    margin-top: 0px;
+                    margin-left: 5%;
+                    margin-right: 2%;
+                    float: left;
+                }
+                    
+                
+                
+                .main2 {
+                    position: relative;
+                    width: 40%;
+                    height: 80%;
+                    background-color: white;
+               
+                    margin-top: 0px;
+                    margin-right: 5%;
+                     margin-left: 2%;
+                    float: left;
+                }
 
-        <div class="luar">
-           <div class="kolom1">
-            <div class="kotak1"></div>   
-            <div class="kotak2"></div>   
-            <div class="kotak3"></div>
-        </div>
-    
-        <div class="kolom2">
-          <div class="judul"></div>  
-          <div class="hijau"></div>   
-          <div class="hitam"></div>
-          <div class="hitam2"></div>
+                .tabletop {
+                    position: relative;
+                    width: 80%;
+                    height: 20%;
+                    background-color: white;
+                    margin-left:  0px;
+                    margin-top: 30px;
+                    float: right;
+                    border-collapse:collapse ;
+                    border-style: solid;
+                    border-width: thin;
+                   vertical-align:top ;
+                   text-align: inherit;
+                }
+                
+
+                .tablebottom {
+                    position: relative;
+                    width: 100%;
+                    border: 1px solid white;
+                    border-collapse: collapse;
+                
+                }
+                
+                
+                .text1 {
+                    position: relative;
+                    width: 50%;
+                    height: 5%;
+                    background-color: white;
+                    float: right;
+               
+                }
+                
+
+                .text2 {
+                    position: relative;
+                    width: 50%;
+                    height: 20%;
+                    background-color: white;
+                    margin-right: 0%;
+                    margin-left:100% ;
+                    float: right;
+                   
+                }
+                
+
+                .text3 {
+                    position: relative;
+                    width: 50%;
+                    height: 15%;
+                    background-color: plum;
+                    
+                    margin-top: 1%;
+                    float: right;
+                   
+                }
+                
+
+                .angka {
+                    position: relative;
+                    width: 100%;
+                    height: 43%;
+                    background-color: white;
+                    margin-top: 15%;
+                    float: left; 
+                    
+                }
+                
+
+                .y {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    
+                    margin-top: 20%;
+                    float: left;
+                   
+                }
+                
+
+               @media (max-width: 1000px) {
+                .background {
+                    width: 100%;
+                   }
+
+                
+                .main1 {
+                    width: 100%;
+                    margin: 0px;
+                    }
+
+                .main2 {
+                    width: 100%;
+                    margin: 0px;
+
+                   }
+                
+               
+
+            </style>
         
-          <div class="hijau2"></div>
-          <div class="hitam3"></div>
-         
-          <div class="hijau3"></div>
-          <div class="hitam4"></div>
-          <div class="hitam5"></div>
-          <div class="hitam6"></div>
-          <div class="hitam7"></div>
-         
-          <div class="hijau4"></div>
-          <div class="hitam8"></div>
-          
-          <div class="hijau5"></div>
-          <div class="hitam9"></div>  
-      </div>
-     
-        <div class="kolom3">  
-          <div class="kotak4"></div>
-          <div class="kotak5"></div>   
-      </div>
+        </head>
+        <body>
+    <div class="kotakluar"> 
+
+        <div class="main1">
+            <div class="background"> 
+                 <h2 style="color: white; font-family:sans-serif; font-size: 24px; text-align:center;"> 
+                    Stand Departure Information </h2>
+        
+            <table class="tabletop">
+                     <thead>
+                         <tr>
+    <th style=
+    "width: 5%; border-right-color:grey; background-color: grey; color: white; font-size: 12px;"> Route No.</th>
     
-        <div class="kolom4">  
-          <div class="kotak6"></div>
-        </div> 
-    
-        <div class="kolom5">
-          <div class="judul2"></div>   
-          <div class="kotak7"></div>   
-          <div class="kotak7"></div>
-          <div class="kotak7"></div>
-          <div class="kotak7"></div>
-          <div class="kotak7"></div>
-          <div class="kotak8"></div>
-          <div class="kotak9"></div>   
-          <div class="kotak9"></div>
-          <div class="kotak9"></div>
-          <div class="kotak9"></div>
-          <div class="kotak10"></div>
-          <div class="kotak11"></div>
-          <div class="kotak11"></div>
-          <div class="kotak11"></div>
-          <div class="kotak11"></div>
-      </div>
+    <th style=
+     "background-color:grey ; color: white; font-size: 12px;"> Location </th>
+
+     <th style=
+ "width: 25%; border-right-color:grey; background-color: grey; color:white; font-size: 12px;"> Stand </th>
+                    
+</tr>
+                     </thead>
+                     <tbody>
+                            <tr>
+                        <td  style="font-size: 12px;text-align: justify;"> 81, 82, 83, 84, 85</td>
+                                        
+                        <td style="font-size: 12px;text-align: center;"> Perth Busport</td>
+                   
+                        <td style="font-size: 12px; text-align: center;"> 9 - 12 </td>
+                   
+                    </tr>
+                   
+                </tbody>
+                
+            </table>
+                    
+                <div class="y">
+
+             <p style="font-family:sans-serif; font-weight: bolder;   font-size: 30px; color: green;"> 
+                Transperth Information</p>
+         <p style="font-family:sans-serif;font-size: 15px;color: green; line-height: 30px;"> 
+            Call us</p>
+     <p style="font-family:sans-serif;font-size: 15px;color: green;"> 
+        Info Line  </p>
+     <p style="font-family:sans-serif;font-size: 12px;color: black;">
+         on 13 62 13 </p>
+         <p style="font-family:sans-serif;font-size: 12px;color: black;"> 
+            (TIS 13 14 50) </p>
+                 <p style="font-family:sans-serif;font-size: 15px;color: green; line-height: 30px;">
+                     Hearing or speech impaired? </p>
+      <p style="font-family:sans-serif;font-size: 12px;color: black;"> 
+        Call via NRS on 133 677 </p>
+      <p style="font-family:sans-serif;font-size: 15px;color: green; line-height: 30px;"> 
+        Visit an infocentre at :</p>
+     <p style="font-family:sans-serif;font-size: 12px;color: black; "> 
+        Elizabeth Quay Bus Station </p>
+          <p style="font-family:sans-serif;font-size: 12px;color: black;"> 
+            Perth Busport </p>
+           <p style="font-family:sans-serif;font-size: 12px;color: black;"> 
+            Perth Station </p>
+                  <p style="font-family:sans-serif;font-size: 12px;color: black;"> 
+                    Perth Upperground Station </p>
+                       <p style="font-family:sans-serif;font-size: 15px;color: green;line-height: 30px;">
+                         Got an Iphone or Android device? </p>
+            <p style="font-family:sans-serif;font-size: 12px;color: black;"> 
+                Download our free app now to help you plan your journey </p>
+    <p style="font-family:sans-serif;font-size: 15px;color: green;line-height: 30px;">
+         Visit us online </p>
+        <p style="font-family:sans-serif;font-size: 12px;color: black;"> 
+            Transperth.wa.gov.au </p>
+                
+        </div>
+            </div>
+        </div>
+                <div class="main2">
+
+          <div class="text1">
+        
+            <h3 style="font-family:sans-serif; float: right; font-size: 25px;"> Bus Timetables </h3>
+        
+        </div>
+                    <div class="text2">
+                        <h4 style="font-size: 100px; float: right;"> 42 </h4>
+                    </div>
+        
+                    <div class="text3">
+                        <h5 style="font-family:sans-serif; float:right; font-size: 15px; font-weight: lighter; "> 
+                            For full service details for these routes, refer to Timetables 43 </h5>
+                    </div>
+
+                    <div class="angka">
+        
+                        <table class="tablebottom">
+                    <thead>
+                      <tr>
+                            <th style="font-family:sans-serif;     font-size: 20px;"> Routes </th>
+                </tr>
+            </thead>
+        <tbody>
+                <tr>
+                
+                    <td style=
+                 "background-color: white; color: black;font-size: 35px;line-height: 60px; font-weight: bold;"
+                 > 81 </td>
+         <td style="background-color: white ; color: black ;font-size: 20px;"
+         > Perth - Wembley via cambridge St</td>
+        
+                </tr>
+            <tr>
+         <td style=
+         "background-color:  white; color: black;font-size: 35px;line-height: 60px ; font-weight: bold;"
+         > 82 </td>
+      <td style="background-color: white ; color:  black;font-size: 20px;"
+      >  Perth - Wembley via Cambridge St </td>
+                                  
+            </tr>
+                <tr>
+          <td style=
+          "background-color: white; color: black rgb(0, 0, 0);font-size: 35px; line-height: 60px ; font-weight: bold;"
+          > 83 </td>
+  <td style="background-color:  white; color: black;font-size: 20px;"
+  > Perth - Wembley via Cambridge St </td>
+                                   
+            </tr>
+            <tr>
+ <td style=
+ "background-color:  white; color:  black;font-size: 35px; line-height: 60px ; font-weight: bold;"
+ > 84 </td>
+ <td style="background-color:  white; color:  black;font-size:20px;"
+ >  Perth - Wembley via Cambridge St </td>
+                                  
+                    </tr>
+            <tr>
+ <td style=
+ "background-color:  white; color:  black;font-size: 35px; line-height: 60px ; font-weight: bold;"
+ >  85 </td>
+     <td style="background-color: white; color:  black;font-size:20px; "
+     >  Perth - Wembley via Cambridge St </td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> 
+                        
+
+                         
+              
+                </div>  
+
+         
     </div>  
     
-      </body>
-    </html>
+        </body>
+
+</html>
+    
