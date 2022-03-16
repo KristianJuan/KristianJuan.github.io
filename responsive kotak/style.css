@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 200px;
+height: 100vh;
+background-color: tan;
+z-index: 2;
+}
+  
+main {
+position: relative;
+width: calc(100vw - 200px);
+min-height: 100vh;
+height: 1400px;
+margin-left:200px;
+}
+  
+.main_container {
+position: relative;
+width: 800px;
+height: 100%;
+float: left;
+background-color: lightcyan;
+}
+  
+aside {
+position: relative;
+width: 350px;
+height: 100%;
+float: left;
+background-color:lightslategray;
+}
+
+.kotaka {
+position: relative;
+width: 100%;
+height: 30%;
+float: left;
+background-color: lightsalmon;
+}
+
+.kotakb {
+position: relative;
+width: 100%;
+height: 70%;
+float: left;
+background-color:papayawhip;
+}
+
+.atas {
+position: relative;
+width: 90%;
+height: 150px;
+float: left;
+margin-left: 5%;
+margin-top: 5%;
+}
+
+.judul {
+position: relative;
+width: 100%;
+height: 70px;
+float: left;
+background-color:paleturquoise;
+}
+
+.judul:nth-child(even){
+margin-top: 3%;
+width: 80%;
+}
+
+.isi {
+position: relative;
+width: 90%;
+height: 300px;
+float: left;
+margin: 5%;
+}
+.ye {
+position: relative;
+width: 100%;
+height: 40px;
+float: left;
+background-color:lightblue;
+margin-top: 3%;
+}
+
+.pojok {
+position: relative;
+width: 90%;
+height: 70px;
+float: left;
+margin-right: 15%;
+margin-top: 30px;
+margin-bottom: 0px;
+}
+
+.gmbar {
+position: relative;
+width: 90px;
+height: 100%;
+float: left;
+background-color:lightgoldenrodyellow;
+margin-left: 10%;
+}
+
+.hm {
+position: relative;
+width: 180px;
+height: 30px;
+float: right;
+background-color: burlywood;
+margin-bottom: 4%;
+}
+  
+@media (min-width: 601px) and (max-width: 1300px) {
+main {
+width: 100%;
+height: 50%;
+}
+
+.main_container, aside{
+width: 100vw;
+height: 100%;}
+}
+  
+@media (max-width: 600px) 
+{nav {
+width: 100vw;
+height: 60px;}
+  
+main {
+width: 100vw;
+margin-top: 60px;}
+
+.main_container, aside{
+width: 100vw;
+height: 50%;}
+}
